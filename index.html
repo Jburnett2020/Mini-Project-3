@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Declaring the character encoding as UTF-8 for proper text rendering -->
     <meta charset="UTF-8" />
+
+    <!-- Setting the viewport for responsive design, especially on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking Font Awesome CDN for icons (arrows in this case) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
+
+    <!-- Linking the external stylesheet (style.css) for custom styles -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Setting the title of the page as 'Background Slider' -->
     <title>Background Slider</title>
   </head>
+
   <body>
+    <!-- Slider container div that holds the sliding images -->
     <div class="slider-container">
+      
+      <!-- Slide 1: Set as active by default, with a background image from the 'images' folder -->
       <div
         class="slide active"
         style="
           background-image: url('images/image1.jpg');
         "
       ></div>
+
+      <!-- Slide 2: Second image in the slider, background image from 'images' folder -->
       <div
         class="slide"
         style="
@@ -27,6 +42,7 @@
         "
       ></div>
 
+      <!-- Slide 3: Third image in the slider -->
       <div
         class="slide"
         style="
@@ -34,6 +50,7 @@
         "
       ></div>
 
+      <!-- Slide 4: Fourth image in the slider -->
       <div
         class="slide"
         style="
@@ -41,6 +58,7 @@
         "
       ></div>
 
+      <!-- Slide 5: Fifth image in the slider -->
       <div
         class="slide"
         style="
@@ -48,14 +66,20 @@
         "
       ></div>
 
+      <!-- Left arrow button for navigating to the previous slide -->
       <button class="arrow left-arrow" id="left">
+        <!-- Font Awesome left arrow icon -->
         <i class="fas fa-arrow-left"></i>
       </button>
 
+      <!-- Right arrow button for navigating to the next slide -->
       <button class="arrow right-arrow" id="right">
+        <!-- Font Awesome right arrow icon -->
         <i class="fas fa-arrow-right"></i>
       </button>
     </div>
+
+    <!-- Linking the external JavaScript file (script.js) for functionality -->
     <script src="script.js"></script>
   </body>
 </html>
